@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:id="@+id/inputLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_weight="1"
+            android:hint="Input One"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/inputOneEdit"
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Input One"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:id="@+id/inputTwoEdit"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/inputLinear"
+        android:orientation="horizontal"
+        android:id="@+id/outputLinear"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:hint="Addition"
+            android:textColorHint="@color/black"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/additionBtn"
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:hint="Subtraction"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColorHint="@color/black"
+            android:id="@+id/subtractionBtn"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:background="@color/gray_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/outputLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/_12sdp"
+           android:id="@+id/inputOne"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/inputTwo"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/inputAction"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/output"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
